@@ -15,9 +15,7 @@ public class Calculator {
 		if (calculation.contains("+")) {
 			return addition(calculation);
 		}else  if (calculation.contains("-")) {
-			subOp = new Sub();
-			preAns=subOp.Compute(calculation);
-			return preAns;
+			return subtraction(calculation);
 		}else  if (calculation.contains("/")) {
 			divOp = new Div();
 			preAns=divOp.Compute(calculation);
@@ -37,6 +35,13 @@ public class Calculator {
 		
 		return -1;
 	
+	}
+
+
+	private double subtraction(String calculation) {
+		subOp = new Sub();
+		preAns=subOp.Compute(calculation);
+		return preAns;
 	}
 
 
