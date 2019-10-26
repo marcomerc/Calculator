@@ -14,7 +14,6 @@ public class Div implements Operation {
 				result=result/ Double.parseDouble(num);
 
 			}
-//			System.out.println(result);
 		}
 		return result;
 	}

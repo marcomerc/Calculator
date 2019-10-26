@@ -25,6 +25,11 @@ public class Calculator {
 			divOp = new Div();
 			preAns=divOp.Compute(calculation);
 			return preAns;
+		} else  if (calculation.contains("*")) {
+			multiOp = new Multi();
+			preAns=multiOp.Compute(calculation);
+			System.out.println(preAns);
+			return preAns;
 		} 
 			
 			
