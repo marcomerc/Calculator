@@ -79,5 +79,10 @@ public class suitTest {
 		temp.Compute("8/2");
 		assertTrue(temp.Compute("ans/2") == 2);
 	}
+	@Test
+	public void MultiAddition() {
+		Calculator temp = new Calculator();
+		assertTrue(temp.Compute("2+2+2") == 6);
+	}
 	
 }
