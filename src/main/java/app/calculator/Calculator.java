@@ -30,8 +30,12 @@ public class Calculator {
 			preAns=multiOp.Compute(calculation);
 			System.out.println(preAns);
 			return preAns;
+		}else  if (calculation.contains("%")) {
+			modOp = new Mod();
+			preAns=modOp.Compute(calculation);
+			System.out.println(preAns);
+			return preAns;
 		} 
-			
 			
 		
 		return -1;
