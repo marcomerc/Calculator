@@ -61,6 +61,11 @@ public class suitTest {
 		temp.Compute("10+7");
 		assertTrue(temp.Compute("ans+3") == 17+3);
 	}
-	
+	@Test
+	public void TestSubtractingWithANSNumbers() {
+		Calculator temp = new Calculator();
+		temp.Compute("10-7");
+		assertTrue(temp.Compute("ans-3") == 0);
+	}
 	
 }
