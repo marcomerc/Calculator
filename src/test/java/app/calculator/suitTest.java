@@ -89,5 +89,9 @@ public class suitTest {
 		Calculator temp = new Calculator();
 		assertTrue(temp.Compute("8-2-2") == 4);
 	}
+	public void MultiMultiplication() {
+		Calculator temp = new Calculator();
+		assertTrue(temp.Compute("2*2*2") == 4);
+	}
 	
 }
