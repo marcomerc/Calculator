@@ -70,8 +70,8 @@ public class suitTest {
 	@Test
 	public void TestMultiWithANSNumbers() {
 		Calculator temp = new Calculator();
-		temp.Compute("10*7");
-		assertTrue(temp.Compute("ans*3") == 0);
+		temp.Compute("2*2");
+		assertTrue(temp.Compute("ans*2") == 8);
 	}
 	
 }

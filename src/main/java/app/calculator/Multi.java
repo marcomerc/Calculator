@@ -7,6 +7,9 @@ public class Multi implements Operation {
 		String[] numbers = op.split("\\*",2);
 		int index =0;
 		for(String num: numbers) {
+			if(num.contains("ans")) {
+				num= Double.toString(preAns);
+			}
 			if(index == 0) {
 				result	=  Double.parseDouble(num);
 				index++;
