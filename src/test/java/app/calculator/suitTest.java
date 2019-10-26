@@ -10,7 +10,7 @@ public class suitTest {
 		assertTrue(temp.Add(10, 3) == 10+3);
 	}
 	@Test
-	public void TestAdding() {
+	public void TestAddingError() {
 		Calculator temp = new Calculator();
 		assertTrue(temp.Add(10, 3) == 10);
 	}
