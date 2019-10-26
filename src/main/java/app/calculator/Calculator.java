@@ -11,14 +11,16 @@ public class Calculator {
 
 	public double Compute(String calculation) {
 		double result = 0;
-			if (calculation.contains("+")) {
+	
+		if (calculation.contains("+")) {
 			addOp = new Add();
 			preAns=addOp.Compute(calculation);
+			
 			return preAns;
 		}
 		
 			
 		
-		return 0;
+		return -1;
 	}
 }
