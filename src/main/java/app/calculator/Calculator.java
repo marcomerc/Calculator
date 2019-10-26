@@ -19,10 +19,7 @@ public class Calculator {
 		}else  if (calculation.contains("/")) {
 			return division(calculation);
 		} else  if (calculation.contains("*")) {
-			multiOp = new Multi();
-			preAns=multiOp.Compute(calculation);
-			System.out.println(preAns);
-			return preAns;
+			return mulitplication(calculation);
 		}else  if (calculation.contains("%")) {
 			modOp = new Mod();
 			preAns=modOp.Compute(calculation);
@@ -33,6 +30,14 @@ public class Calculator {
 		
 		return -1;
 	
+	}
+
+
+	private double mulitplication(String calculation) {
+		multiOp = new Multi();
+		preAns=multiOp.Compute(calculation);
+		System.out.println(preAns);
+		return preAns;
 	}
 
 
