@@ -21,7 +21,12 @@ public class Calculator {
 			subOp = new Sub();
 			preAns=subOp.Compute(calculation);
 			return preAns;
+		}else  if (calculation.contains("/")) {
+			divOp = new Div();
+			preAns=divOp.Compute(calculation);
+			return preAns;
 		} 
+			
 			
 		
 		return -1;
