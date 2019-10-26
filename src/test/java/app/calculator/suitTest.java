@@ -24,7 +24,7 @@ public class suitTest {
 	public void TestSubtractingError() {
 		Calculator temp = new Calculator();
 		System.out.println(temp.Compute("20-3"));
-		assertFalse(temp.Compute("20-3") == 0);
+		assertFalse(temp.Compute("20-3") == 20);
 	}
 
 }
