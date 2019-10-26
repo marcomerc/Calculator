@@ -89,7 +89,13 @@ public class suitTest {
 		Calculator temp = new Calculator();
 		assertTrue(temp.Compute("8-2-2") == 4);
 	}
+	@Test
 	public void MultiMultiplication() {
+		Calculator temp = new Calculator();
+		assertTrue(temp.Compute("2*2*2") == 8);
+	}
+	@Test
+	public void MultiDivision() {
 		Calculator temp = new Calculator();
 		assertTrue(temp.Compute("2*2*2") == 4);
 	}
