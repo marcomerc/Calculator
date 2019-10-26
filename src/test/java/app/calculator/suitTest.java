@@ -12,7 +12,7 @@ public class suitTest {
 	@Test
 	public void TestAddingError() {
 		Calculator temp = new Calculator();
-		assertTrue(temp.Add(10, 3) == 10);
+		assertFalse(temp.Add(10, 3) == 10);
 	}
 
 }
