@@ -21,15 +21,20 @@ public class Calculator {
 		} else  if (calculation.contains("*")) {
 			return mulitplication(calculation);
 		}else  if (calculation.contains("%")) {
-			modOp = new Mod();
-			preAns=modOp.Compute(calculation);
-			System.out.println(preAns);
-			return preAns;
+			return modulus(calculation);
 		} 
 			
 		
 		return -1;
 	
+	}
+
+
+	private double modulus(String calculation) {
+		modOp = new Mod();
+		preAns=modOp.Compute(calculation);
+		System.out.println(preAns);
+		return preAns;
 	}
 
 
