@@ -2,9 +2,8 @@ package app.calculator;
 
 public class Multi implements Operation {
 
-	public double Compute(String op) {
+	public double Compute(String op,double preAns) {
 		double result = 0;
-		
 		String[] numbers = op.split("\\*",2);
 		int index =0;
 		for(String num: numbers) {
@@ -18,5 +17,6 @@ public class Multi implements Operation {
 		return result;
 	
 	}
-
 }
+
+

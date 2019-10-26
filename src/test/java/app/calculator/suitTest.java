@@ -55,6 +55,12 @@ public class suitTest {
 		Calculator temp = new Calculator();
 		assertFalse(temp.Compute("5%4") == -1);
 	}
+	@Test
+	public void TestAddingWithANSNumbers() {
+		Calculator temp = new Calculator();
+		temp.Compute("10+3");
+		assertTrue(temp.Compute("ANS+3") == 10+3);
+	}
 	
 	
 }

@@ -32,37 +32,35 @@ public class Calculator {
 
 	private double modulus(String calculation) {
 		modOp = new Mod();
-		preAns=modOp.Compute(calculation);
-		System.out.println(preAns);
+		preAns=modOp.Compute(calculation,preAns);
 		return preAns;
 	}
 
 
 	private double mulitplication(String calculation) {
 		multiOp = new Multi();
-		preAns=multiOp.Compute(calculation);
-		System.out.println(preAns);
+		preAns=multiOp.Compute(calculation,preAns);
 		return preAns;
 	}
 
 
 	private double division(String calculation) {
 		divOp = new Div();
-		preAns=divOp.Compute(calculation);
+		preAns=divOp.Compute(calculation,preAns);
 		return preAns;
 	}
 
 
 	private double subtraction(String calculation) {
 		subOp = new Sub();
-		preAns=subOp.Compute(calculation);
+		preAns=subOp.Compute(calculation,preAns);
 		return preAns;
 	}
 
-
+	
 	private double addition(String calculation) {
 		addOp = new Add();
-		preAns=addOp.Compute(calculation);
+		preAns=addOp.Compute(calculation,preAns);
 		return preAns;
 	}
 }

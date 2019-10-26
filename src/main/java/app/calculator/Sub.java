@@ -2,7 +2,7 @@ package app.calculator;
 
 public class Sub implements Operation {
 
-	public double Compute(String op) {
+	public double Compute(String op,double preAns) {
 		double result = 0;
 		
 		String[] numbers = op.split("\\-",2);
