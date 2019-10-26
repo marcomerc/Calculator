@@ -73,6 +73,7 @@ public class suitTest {
 		temp.Compute("2*2");
 		assertTrue(temp.Compute("ans*2") == 8);
 	}
+	@Test
 	public void TestDiviWithANSNumbers() {
 		Calculator temp = new Calculator();
 		temp.Compute("8/2");

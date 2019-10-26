@@ -24,7 +24,6 @@ public class Calculator {
 			return modulus(calculation);
 		} 
 			
-		
 		return -1;
 	
 	}
