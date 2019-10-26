@@ -20,10 +20,8 @@ public class Calculator {
 		}else  if (calculation.contains("-")) {
 			subOp = new Sub();
 			preAns=subOp.Compute(calculation);
-			System.out.println(preAns);
-
 			return preAns;
-		}
+		} 
 			
 		
 		return -1;
