@@ -38,5 +38,18 @@ public class suitTest {
 		System.out.println(temp.Compute("20/4"));
 		assertFalse(temp.Compute("20/4") == -1);
 	}
-
+	@Test
+	public void TestMultiplyingTwoNumbers() {
+		Calculator temp = new Calculator();
+		
+		assertTrue(temp.Compute("5*4") == 5*4);
+	}
+	@Test
+	public void TestMultiplyingError() {
+		Calculator temp = new Calculator();
+		System.out.println(temp.Compute("20/4"));
+		assertFalse(temp.Compute("5*4") == -1);
+	}
+	
+	
 }
