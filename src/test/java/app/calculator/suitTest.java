@@ -58,8 +58,8 @@ public class suitTest {
 	@Test
 	public void TestAddingWithANSNumbers() {
 		Calculator temp = new Calculator();
-		temp.Compute("10+3");
-		assertTrue(temp.Compute("ANS+3") == 10+3);
+		temp.Compute("10+7");
+		assertTrue(temp.Compute("ans+3") == 17+3);
 	}
 	
 	
