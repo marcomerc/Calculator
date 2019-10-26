@@ -45,6 +45,16 @@ public class suitTest {
 		Calculator temp = new Calculator();
 		assertFalse(temp.Compute("5*4") == -1);
 	}
+	@Test
+	public void TestModdulusOfTwoNumbers() {
+		Calculator temp = new Calculator();
+		assertTrue(temp.Compute("5%4") == 5%4);
+	}
+	@Test
+	public void TestModdulusError() {
+		Calculator temp = new Calculator();
+		assertFalse(temp.Compute("5%4") == -1);
+	}
 	
 	
 }
