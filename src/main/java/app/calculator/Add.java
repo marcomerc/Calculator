@@ -12,7 +12,6 @@ public class Add implements Operation {
 				num= Double.toString(preAns);
 			}
 			result+= Double.parseDouble(num);
-			System.out.println(result);
 		}
 		return result;
 	}
